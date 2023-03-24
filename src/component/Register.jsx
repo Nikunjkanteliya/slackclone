@@ -41,7 +41,6 @@ const Register = () => {
         // ..
       });
 
-
     dispatch(uiaction.data(name));
     setmail("");
     setpassword("");
@@ -64,23 +63,27 @@ const Register = () => {
             placeholder="Username"
             onChange={username}
             value={name}
+            required
           />
           <input
             type="email"
             placeholder="Mailid"
             onChange={usermail}
             value={email}
+            required
           />
           <input
             type="password"
             placeholder="Password"
             onChange={userpass}
             value={password}
+            required
           />
           <input
             type="password"
             placeholder="Password Conformation"
             value={password}
+            required
           />
           <button className={style.btn}>submit</button>
         </form>
