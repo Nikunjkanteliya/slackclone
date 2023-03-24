@@ -9,7 +9,7 @@
 .search {
     padding: 8px 250px;
 
-    margin-left: 15rem;
+    margin-left: 18rem;
 }
 .seconddiv{
     width: 20rem;
@@ -90,4 +90,23 @@
     font-weight: 700;
     margin-top: 10rem;
     margin-left: 2rem;
+}
+
+.logout{
+    margin-left: 10rem;
+
+    padding: 5.5px 28px;
+    border-radius: 5px;
+    border: none;
+    font-size: 500;
+    font-size: 19px;
+    background-color: white;
+    color: #214469;
+    
+
+}
+.logout:hover{
+    background-color:#214469 ;
+    color: #fff;
+    border: 1px solid white;
 }

@@ -61,7 +61,7 @@ const General = () => {
   };
 
   return (
-    <div>
+    <div >
       <div className={style.datadiv}>
         {allarr.map((item, index) => {
           console.log(item);
