@@ -1,0 +1,43 @@
+ .mainlogin{
+    margin-left: 40rem;
+    margin-top: 10rem;
+ }
+ .loginfont{
+    color: #6435c9;
+    width: 20rem;
+    text-align: center;
+    margin-bottom: 0.3rem;
+ }
+ .logininp{
+    background-color: #fff;
+    border: 1px solid #ccc;
+    width: 20rem;
+    height: 10rem;
+    border-radius: 5px;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+ }
+ 
+ .loginbtn{
+    padding: 8px 120px;
+    margin-left: 1rem;
+    margin-bottom: 0.5rem;
+   border-radius: 5px;
+    background-color: #6435c9;
+    color: #fff;
+    border: none;
+ }
+ .loginuserlog{
+    border: 1px solid #ccc;
+    background-color: #fff;
+    width: 14rem;
+    padding: 8px 50px;
+    margin-top: 1rem;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+ }
+ .branch {
+    width: 100px;
+    margin-left: 7rem;
+    margin-bottom: -1rem;
+ }
