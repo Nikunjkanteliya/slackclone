@@ -86,7 +86,7 @@ text-align: center;
   left: -440px;
 }
 .inp{
- 
+ width: inherit;
   padding: 10px 20px;
 
 }
