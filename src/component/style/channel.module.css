@@ -8,13 +8,13 @@
 }
 .search {
     padding: 8px 250px;
-
     margin-left: 18rem;
 }
 .seconddiv{
     width: 20rem;
    height: 40.5rem;
    background-color: #214469;
+  
 }
 .slack{
 
@@ -44,7 +44,6 @@
    }
    .connect{
     margin-left: 3rem;
-
     margin-top: 1rem;
     display: flex;
     flex-direction: column;

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { getAuth, signOut } from "firebase/auth";
-import { Link } from "react-router-dom";
+
 import style from "./style/channel.module.css";
 import { AiOutlineDown } from "react-icons/ai";
 import { CgProfile } from "react-icons/cg";
@@ -8,15 +8,21 @@ import { BsFillBuildingsFill } from "react-icons/bs";
 import { BsThreeDotsVertical } from "react-icons/bs";
 import { BsChevronCompactDown } from "react-icons/bs";
 import app from "./style/Firebase";
+import Inp from "./Inp";
 import { GoDiffAdded } from "react-icons/go";
 import { AiOutlineMinusSquare } from "react-icons/ai";
 import General from "./General";
 import { useHistory } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 const Channel = () => {
   let [gent, setgent] = useState(false);
+  let [channel, addchannels] = useState(false);
 
   let history = useHistory();
+  let adddata = useSelector((state) => {
+    return state.one.channelname;
+  });
 
   let logoutfun = () => {
     const auth = getAuth(app);
@@ -29,6 +35,11 @@ const Channel = () => {
       });
   };
 
+  let addchanne = () => {
+    addchannels((prevstate) => !prevstate);
+  };
+
+  // console.log(channelalldata);
   return (
     <div>
       <header className={style.header}>
@@ -73,7 +84,15 @@ const Channel = () => {
           </span>{" "}
           <span className={style.bs}># random</span>
           <span className={style.bs}># slack-clone</span>
-          <span className={style.channel}>
+          {adddata.map((item, index) => {
+            return (
+              <span className={style.bs} key={Math.random()}>
+                {" "}
+                {`#${item}`}{" "}
+              </span>
+            );
+          })}
+          <span className={style.channel} onClick={addchanne}>
             <GoDiffAdded />
             Addchannel
           </span>
@@ -92,6 +111,7 @@ const Channel = () => {
 
         <div className={style.last}>Slack clone</div>
         {gent && <General />}
+        {channel && <Inp />}
       </div>
     </div>
   );

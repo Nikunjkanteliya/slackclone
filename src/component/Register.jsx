@@ -6,12 +6,15 @@ import app from "./style/Firebase";
 import { uiaction } from "./store/config";
 import { useDispatch } from "react-redux";
 
+
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 const Register = () => {
   let [email, setmail] = useState("");
   let [password, setpassword] = useState("");
   let [name, setname] = useState("");
   let dispatch = useDispatch();
+  
+
   let username = (event) => {
     setname(event.target.value);
   };
