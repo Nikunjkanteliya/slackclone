@@ -41,7 +41,7 @@ const Channel = () => {
 
   // console.log(channelalldata);
   return (
-    <div>
+    <div className={style.mainall}>
       <header className={style.header}>
         <form>
           <input type="search" className={style.search} />

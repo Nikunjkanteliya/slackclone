@@ -61,13 +61,13 @@ const General = () => {
   };
 
   return (
-    <div >
+    <div  className={style.maindivgeneral}>
       <div className={style.datadiv}>
         {allarr.map((item, index) => {
           console.log(item);
           return (
             <ul key={item.id} className={style.fetchdata}>
-              <li
+              <li className={style.lidata}
                 title="Double Click To Delete"
                 onDoubleClick={() =>
                   axios

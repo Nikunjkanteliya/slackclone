@@ -41,3 +41,9 @@
     margin-left: 7rem;
     margin-bottom: -1rem;
  }
+ @media only screen and (max-width: 480px) {
+   .mainlogin{
+    width: inherit;
+    margin-left: 30px;
+   }
+}

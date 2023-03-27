@@ -57,3 +57,43 @@
   }
   
   
+  @media only screen and (max-width: 480px) {
+
+.datadiv{
+  width: inherit;
+  display: block;
+justify-content: center;
+position: relative;
+left: 0px;
+top: 0px;
+text-align: center;
+
+
+
+
+}
+.fetchdata{
+  
+  display: block;
+  width:100% ;
+  margin-left: -20px;
+  
+}
+
+.forms{
+  width: inherit;
+  position: absolute;
+  left: -440px;
+}
+.inp{
+ 
+  padding: 10px 20px;
+
+}
+.sendbutton{
+padding: 1px 8px;
+margin-left: 5px;
+font-size: inherit;
+}
+
+  }

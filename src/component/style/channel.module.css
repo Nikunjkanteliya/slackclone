@@ -1,3 +1,8 @@
+* {
+	box-sizing: border-box;
+}
+
+
 .header{
       height: 4rem;
       background-color: #214469;
@@ -109,3 +114,25 @@
     color: #fff;
     border: 1px solid white;
 }
+
+@media only screen and (max-width: 480px) {
+    .header{
+         text-align: center; 
+         width: 82vw;
+         display: flex;
+         flex-direction: row;
+    }
+    .search{
+        padding: 8px 20px;
+        margin-left: -15px;    
+    }
+    .logout{
+        padding: 2px 10px; 
+        margin-left: 5px;
+    }
+    
+.mainall{
+margin-left: 33px;
+}
+  
+ }

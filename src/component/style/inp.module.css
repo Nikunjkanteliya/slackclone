@@ -27,3 +27,13 @@ border: 1px solid #214469;
     color: #214469;
     border: 1px solid #214469;
 }
+
+@media only screen and (max-width: 480px) {
+    .main{
+        position: absolute;
+        left: -800px;
+        top: 1200px;
+        width: inherit;
+        border: none;
+    }
+}
